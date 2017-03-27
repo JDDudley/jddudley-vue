@@ -9,6 +9,20 @@
         <v-btn round primary @click.native="submitForm">Send Message</v-btn>
       </form>
     </div>
+    <v-alert success dismissible v-model="formSuccess">
+      <p>Thank you! Your message has been sent. A response will be on its way as soon as possible.</p>
+      </v-alert>
+    <v-alert error dismissible v-model="formError">
+      <p>Error: Uh oh, something's gone wrong sending the message. Please try again.</p>
+    </v-alert>
+    <!--<v-snackbar v-model="formSuccess" :timeout="timeout" class="form-success">
+      <h6>Thank You!!</h6>
+      <p>Your message has been sent successfully. A response will be on its way as soon as possible.</p>
+    </v-snackbar>-->
+    <!--<v-snackbar :timeout="timeout" v-model="formError" :bottom="formError" class="form-error">
+      <h6>There's Been Some Trouble</h6>
+      <p>Uh oh, something went wrong with the message. Please try again.</p>
+    </v-snackbar>-->
   </div>
 </template>
 
@@ -19,7 +33,9 @@
       return {
         name: '',
         email: '',
-        message: ''
+        message: '',
+        formSuccess: false,
+        formError: false
       }
     },
     methods: {
@@ -33,17 +49,30 @@
         return this.message.length > 0
       },
       submitForm () {
+        let self = this
         axios.post('//formspree.io/jason@jddudley.com',{
-          name: this.name,
-          email: this.email,
-          message: this.message
+          name: self.name,
+          email: self.email,
+          message: self.message
         }).then(function (res) {
           // success
-          console.log('Success')
+          self.name = ''
+          self.email = ''
+          self.message = ''
+          self.formSuccess = true
+          self.closeAlerts()
         }).catch(function (err) {
           // fail
-          console.log('Error: ', err)
+          self.formError = true
+          self.closeAlerts()
         })
+      },
+      closeAlerts () {
+        let self = this
+        setTimeout(function () {
+          self.formSuccess = false
+          self.formError = false
+        }, 5000)
       }
     }
   }
@@ -56,5 +85,13 @@
   }
   .input-group {
     margin: 12px;
+  }
+  .form-success {
+    background-color: darkgreen;
+    color: white;
+  }
+  .form-error {
+    background-color: darkred;
+    color: white;
   }
 </style>

@@ -11,10 +11,7 @@
           <p>Private work for e-commerce professionals has given me experience combining technologies and analytics to better serve 
             business and customer alike, while resulting in consistently higher sales.
           </p>
-          <p>Modern full-stack education has rounded my skillset and given me a stronger ability to apply my expertise with logic
-            and data analyses.</p>
-          <!--<p>Currently working for a range of clients across multiple fields, including scientific research, new product development, web apps, e-commerce, and non-profit
-            support.</p>-->
+          <p>Modern full-stack education has rounded out my skillset, and I continue to add new tools through projects across multiple frameworks.</p>
         </v-col>
         <v-col class="hidden-sm-and-down about-div" md2 lg3 xl4></v-col>
       </v-row>
@@ -31,7 +28,7 @@
 
 <style scoped>
   .about-div {
-    background-color: rgba(244, 231, 211, 0.75);
+    background-color: rgba(244, 231, 211, 0.8);
   }
   .portrait-div {
     width: 240px;
@@ -52,10 +49,9 @@
     padding-left: 12px;
   }
   .about-div p {
-    padding: 6px 12px 6px 12px;
     line-height: 1.4;
   }
   .row .col {
-    padding: 0;
+    padding: 12px;
   }
 </style>

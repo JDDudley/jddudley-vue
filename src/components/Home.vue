@@ -14,43 +14,43 @@
           </h2>
       </v-col>
     </v-row>-->
-    <v-row class="white-row">
+    <v-row class="home-row">
       <v-col xs6>
-        <h2 class="main-name main-white text-xs-right">Jason</h2>
+        <h2 class="main-name main-light text-xs-right">Jason</h2>
       </v-col>
       <v-col xs6>
         <h2 class="main-name main-alt text-xs-left">Dudley</h2>
       </v-col>
     </v-row>
-    <hr>
-    <v-row class="white-row">
+    <hr class="main-hr main-light">
+    <v-row class="home-row">
       <v-col xs6>
         <h3 class="main-name main-alt text-xs-right">Web Developer</h3>
       </v-col>
       <v-col xs6>
-        <h3 class="main-name main-white text-xs-left">Data Analyst</h3>
+        <h3 class="main-name main-light text-xs-left">Data Analyst</h3>
       </v-col>
     </v-row>
     <v-row class="icon-row">
       <!-- GitHub and LinkedIn -->
       <v-col xs12 class="home-icons">
         <v-btn floating large raised v-tooltip:bottom="{ html: 'GitHub' }">
-          <a href="https://github.com/jddudley" target="_blank"><icon name="github" scale="3.5"></icon></a>
+          <a href="https://github.com/jddudley" target="_blank"><icon name="github" scale="3"></icon></a>
         </v-btn>
         <v-btn floating large raised v-tooltip:bottom="{ html: 'LinkedIn' }">
-          <a href="https://www.linkedin.com/in/jddudley" target="_blank"><icon name="linkedin" scale="3.5"></icon></a>
+          <a href="https://www.linkedin.com/in/jddudley" target="_blank"><icon name="linkedin" scale="3"></icon></a>
         </v-btn>
       </v-col>
       <!-- Work and Skills -->
       <v-col xs12 class="home-icons hidden-sm-and-down">
         <v-btn floating large raised v-tooltip:bottom="{ html: 'Work' }">
           <router-link to="/work">
-            <icon name="briefcase" scale="3.5"></icon>
+            <icon name="briefcase" scale="3"></icon>
           </router-link>
         </v-btn>
         <v-btn floating large raised v-tooltip:bottom="{ html: 'Skills' }">
           <router-link to="/skills">
-            <icon name="cogs" scale="3.5"></icon>
+            <icon name="cogs" scale="3"></icon>
           </router-link>
         </v-btn>
       </v-col>
@@ -58,12 +58,12 @@
       <v-col xs12 class="home-icons hidden-sm-and-down">
         <v-btn floating large raised v-tooltip:bottom="{ html: 'About' }">
           <router-link to="/about">
-            <icon name="coffee" scale="3.5"></icon>
+            <icon name="coffee" scale="3"></icon>
           </router-link>
         </v-btn>
         <v-btn floating large raised v-tooltip:bottom="{ html: 'Contact' }">
           <router-link to="/contact">
-            <icon name="envelope" scale="3.5"></icon>
+            <icon name="envelope" scale="3"></icon>
           </router-link>
         </v-btn>
       </v-col>
@@ -92,18 +92,20 @@
     text-transform: uppercase;
     text-shadow: 2px 2px 2px black;
     line-height: 1.0;
+    margin-bottom: 0;
   }
   
-  .main-white {
-    color: white;
+  .main-light {
+    color: #F4E7D3;
   }
   
   .main-alt {
     color: #29aae2;
   }
   
-  .white-row {
+  .home-row {
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px;
   }
   
   .main-tag {
@@ -123,10 +125,11 @@
     background-color: #29aae2;
     color: #29aae2;
     box-shadow: 2px 2px 2px black;
+    padding: 0;
   }
   .home-icons a {
     text-align: center;
-    padding: 8px;
+    padding: 12px;
     color: black;
   }
 </style>

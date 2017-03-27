@@ -6,7 +6,7 @@
           <router-link to="/">
             <img src="/public/img/jd-nav.png" alt="JD Dudley" id="jd-logo" class="navbar-brand">
           </router-link>
-          <span class="nav-title hidden-sm-and-down">JD.DUDLEY</span>
+          <span class="nav-title hidden-sm-and-down">J.D.DUDLEY</span>
         </v-toolbar-logo>
         <v-btn icon v-tooltip:bottom="{ html: 'RECENT WORK' }" class="main-icons">
           <router-link to="/work">
@@ -43,9 +43,7 @@
   export default {
     data () {
       return {
-        navItems: {
-          text: 'Get Started'
-        }
+        name: 'JD Dudley'
       }
     }
   }
