@@ -10,29 +10,14 @@
           <span class="skill-title">{{ skill.title }}</span>
         </div>
         <v-list class="skill-list">
-          <v-list-item v-for="detail in skill.details" class="skill-list-item">
-            {{ detail }}
-          </v-list-item>
+          <ul>
+            <li v-for="detail in skill.details" class="skill-list-item">
+              {{ detail }}
+            </li>
+          </ul>
         </v-list>
       </v-expansion-panel-content>
     </v-expansion-panel>
-    <!--<v-tabs id="skill-tabs" grow icons>
-      <v-tab-item v-for="skill in skills" :href="skill.icon" slot="activators" class="secondary">
-        <icon :name="skill.icon" scale="2"></icon>
-        {{ skill.title }}
-      </v-tab-item>
-      <v-tab-content v-for="skill in skills" v-bind:id="skill.icon" slot="content" class="primary">
-        <v-card>
-          <v-card-text>
-            <v-list>
-              <v-list-item v-for="detail in skill.details" class="skill-detail">
-                {{ detail }}
-              </v-list-item>
-            </v-list>
-          </v-card-text>
-        </v-card>
-      </v-tab-content>
-    </v-tabs>-->
   </div>
 </template>
 
@@ -85,10 +70,8 @@
               'Targeted Advertising',
               'Customer & Market Analytics',
               'Amazon Integration',
-              'Shopify',
-              'wooCommerce',
-              'Square',
-              'Paypal'
+              'Shopify & wooCommerce',
+              'Square & Paypal'
             ]
           },
           {
@@ -144,6 +127,7 @@
   
   .skill-list-item {
     border: none;
+    margin-left: 70px;
   }
   .skill-icon {
     float: left;

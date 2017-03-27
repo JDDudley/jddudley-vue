@@ -41,7 +41,7 @@
                         url: 'http://meetingsnow.org',
                         img: 'meetingsnow',
                         alt: 'MeetingsNow',
-                        desc: 'Designed and built all aspects of service. Back end includes real-time Firebase database integration and a user-friendly administrative section to eliminate costly maintainence costs for non-profits using service. The first mobile-friendly design of its kind.'
+                        desc: 'Firebase database integration and a user-friendly administrative section. The first mobile-friendly design of its kind.'
                     },
                     {
                         url: 'http://dudleyanalytics.com',
