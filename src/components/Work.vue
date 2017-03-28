@@ -1,6 +1,9 @@
 <template>
   <div>
     <h2 class="pg-title">Work</h2>
+    <!--<v-carousel>
+        <v-carousel-item v-for="example in workExamples" :src="'/public/work/' + example.img + '-lg.jpg'"></v-carousel-item>
+    </v-carousel>-->
     <v-container fluid>
         <v-row>
             <v-col xs6 lg4 v-for="example in workExamples">
@@ -83,6 +86,9 @@
     .work-example {
         width: 100%;
         max-width: 100%;
+    }
+    .work-example:hover {
+        box-shadow: 2px 2px 10px black;
     }
     .row {
         line-height: 0;

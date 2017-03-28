@@ -124,12 +124,19 @@
   .home-icons button {
     background-color: #29aae2;
     color: #29aae2;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 1px 1px 2px black;
     padding: 0;
   }
   .home-icons a {
     text-align: center;
     padding: 12px;
     color: black;
+  }
+  .home-icons button:hover {
+    /*background-color: #1F4E5F;*/
+    box-shadow: 0px 0px 2px #F4E7D3;
+  }
+  .home-icons a:hover {
+    color: #F4E7D3;
   }
 </style>

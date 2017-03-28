@@ -6,12 +6,11 @@
         <v-col class="hidden-sm-and-down about-div" md2 lg3 xl4></v-col>
         <v-col xs12 md8 lg6 xl4 class="about-div">
           <p>Spent 6 years studying Cognitive &amp; Behavioral Neuroscience, as well as Neuropsychology and Neurobiology. Learned
-            many niche languages and ability to unique challenges. Large datasets are
-            a specialty, particularly complex statistical analyses.</p>
+            many niche languages and ability to handle unique challenges. Large datasets are a specialty, particularly involving complex statistical analyses.</p>
           <p>Private work for e-commerce professionals has given me experience combining technologies and analytics to better serve 
-            business and customer alike, while resulting in consistently higher sales.
-          </p>
+            business and customer alike, while resulting in consistently higher sales.</p>
           <p>Modern full-stack education has rounded out my skillset, and I continue to add new tools through projects across multiple frameworks.</p>
+          <p>Most free time is devoted to building up experience through non-profit projects that help technology improve data accessibility.</p>
         </v-col>
         <v-col class="hidden-sm-and-down about-div" md2 lg3 xl4></v-col>
       </v-row>
