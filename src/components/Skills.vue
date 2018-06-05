@@ -28,27 +28,26 @@
         title: 'Skills',
         skills: [
           {
-            title: 'Development',
-            icon: 'terminal',
-            details: [
-              'Javascript',
-              'Vue.JS + Quasar, Vuetify',
-              'NodeJS',
-              'AngularJS',
-              'GitHub',
-              'C#'
-            ]
-          },
-          {
-            title: 'Web',
+            title: 'Front End',
             icon: 'code',
             details: [
               'HTML5',
               'CSS3',
               'Javascript',
               'Responsive Design',
-              'Bootstrap 3',
-              'Wordpress'
+              'VueJS + Vuetify & Quasar',
+              'AngularJS'
+            ]
+          },
+          {
+            title: 'Back End',
+            icon: 'terminal',
+            details: [
+              'Full Scale Javascript Web App Development',
+              'NodeJS',
+              'API Development & Custom Middlewares',
+              'GitHub & Related Git Technologies',
+              'C#'
             ]
           },
           {
@@ -57,9 +56,25 @@
             details: [
               'Mac OS 7.0 - 10.12',
               'CentOS / Ubuntu / Fedora Linux',
+              'Microsoft & Linux Server Management',
               'Microsoft Office (including VBA)',
               'Adobe Photoshop Proficient',
-              'Hardware Assembly & Repair'
+              'Hardware Assembly & Repair',
+              'Network Maintainence & Troubleshooting'
+            ]
+          },
+          {
+            title: 'Amazon',
+            icon: 'amazon',
+            details: [
+              'Amazon MWS Development',
+              'FBA & FBM Sales',
+              'Seller-Fulfilled Prime',
+              'Seller Central Management',
+              'Sales & Ranking Analytics',
+              'Affiliate Program',
+              'AWS Servers & Data',
+              'Custom Scraping & Data Collection'
             ]
           },
           {
@@ -69,32 +84,23 @@
               'Store Design & Development',
               'Targeted Advertising',
               'Customer & Market Analytics',
-              'Amazon Integration',
+              'Supplier Management',
               'Shopify & wooCommerce',
-              'Square & Paypal'
-            ]
-          },
-          {
-            title: 'Amazon',
-            icon: 'amazon',
-            details: [
-              'Seller Central Management',
-              'FBA & FBM Sales',
-              'API Utilization',
-              'Sales & Ranking Analytics',
-              'Affiliate Program',
-              'AWS Servers & Data'
+              'Square & Paypal',
+              'Custom Credit Card Processing',
+              'Custom POS Development'
             ]
           },
           {
             title: 'Data',
             icon: 'line-chart',
             details: [
+              'Advanced Data Scraping',
               'Firebase Real-Time Data',
               'VBA Expert',
               'FileMaker Pro Development',
               'MySQL',
-              'JSON-Formatted',
+              'JSON Application Conversion',
               'Custom API Development'
             ]
           },
@@ -129,6 +135,7 @@
     border: none;
     margin-left: 70px;
   }
+  
   .skill-icon {
     float: left;
     width: 40px;

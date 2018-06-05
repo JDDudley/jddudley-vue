@@ -22,7 +22,7 @@
                             </div>
                         </v-card-row>
                         <v-card-text>
-                            <a :href="example.url" target="_blank">
+                            <a :href="example.url" target="_blank" v-if="example.live">
                                 <v-btn raised primary class="modal-btn">View Live</v-btn>
                             </a>
                             <p class="modal-p">{{ example.desc }}</p>
@@ -41,40 +41,53 @@
             return {
                 workExamples: [
                     {
+                        url: 'https://fivestarservicepros.com',
+                        img: 'fivestar',
+                        alt: 'Five Star Service Pros',
+                        desc: 'Prerendered Vue site developed for ideal SEO implementation and efficient future additions of services and regions.',
+                        live: true
+                    },
+                    {
                         url: 'http://meetingsnow.org',
                         img: 'meetingsnow',
                         alt: 'MeetingsNow',
-                        desc: 'Firebase database integration and a user-friendly administrative section. The first mobile-friendly design of its kind.'
+                        desc: 'Firebase database integration and a user-friendly administrative section. The first mobile-friendly design of its kind.',
+                        live: true
                     },
                     {
                         url: 'http://dudleyanalytics.com',
                         img: 'dudleyanalytics',
                         alt: 'Dudley Analytics',
-                        desc: 'Exercise in Wordpress capabilities and showcase for data-centric services.'
+                        desc: 'Exercise in Wordpress capabilities and showcase for data-centric services.',
+                        live: true
                     },
                     {
                         url: 'http://tennis-elbow.net',
                         img: 'tenniselbow',
                         alt: 'Tennis Elbow Treatment',
-                        desc: 'Built as part of a sales funnel to maintain dominant position in Amazon rankings within its category.'
+                        desc: 'Built as part of a sales funnel to maintain dominant position in Amazon rankings within its category.',
+                        live: true
                     },
                     {
                         url: 'http://www.1xtactical.com',
                         img: '1xtactical',
                         alt: '1X Tactical',
-                        desc: 'Developed front end appearance as part of a team whose ongoing work will include a subscription-based e-commerce store.'
+                        desc: 'Developed front end appearance as part of a team whose ongoing work will include a subscription-based e-commerce store.',
+                        live: false
                     },
-                    {
-                        url: 'http://kavamantra.com',
-                        img: 'kavamantra',
-                        alt: 'Kava Mantra',
-                        desc: 'Wordpress E-Commerce site developed for a new-to-market internet and Amazon retailer.'
-                    },
+                    // {
+                    //     url: 'http://kavamantra.com',
+                    //     img: 'kavamantra',
+                    //     alt: 'Kava Mantra',
+                    //     desc: 'Wordpress E-Commerce site developed for a new-to-market internet and Amazon retailer.',
+                    //     live: FALSE
+                    // },
                     {
                         url: 'http://jddudley.github.io/nflRoster',
                         img: 'nfl',
                         alt: 'NFL Roster',
-                        desc: 'Exercise in front end Javascript (including jQuery) and interactive page design.'
+                        desc: 'Exercise in front end Javascript (including jQuery) and interactive page design.',
+                        live: true
                     }
                 ]
             }

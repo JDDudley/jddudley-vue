@@ -16,7 +16,15 @@ import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon.vue'
 Vue.component('icon', Icon)
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  primary: '#29aae2',
+  accent: '#0881A3',
+  secondary: '#1F4E5F',
+  info: null,
+  warning: null,
+  error: null,
+  success: null
+})
 Vue.use(VueRouter)
 // Vue.use(VueResource)
 
